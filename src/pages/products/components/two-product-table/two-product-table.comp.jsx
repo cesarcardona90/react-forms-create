@@ -15,10 +15,8 @@ const TwoProductTable =(props) =>{
     
     
     const addProduct=(event)=>{
-  
-        event.preventDefault();
-    
-        const newProduct ={
+    event.preventDefault();
+    const newProduct ={
             id:name,
             name:name,
             price:parseFloat(price),
@@ -72,10 +70,12 @@ const TwoProductTable =(props) =>{
                                         }}
                                     >
                                         <option value="d1">Deportivos</option>
+                                        <option value="d2">Familiares</option>
                                     
                                         
                                     </select>
                                 </td>
+                                
                                 <td>
                                     <input
                                         type="text"
@@ -107,24 +107,14 @@ const TwoProductTable =(props) =>{
                                 </td>
                                     <td>
                                         <button
-                                            onClick={(category)=>addProduct('d1')}
+                                            onClick={addProduct}
                                         >
                                             Agregar Carro
                                         </button>
 
                                     </td>
                             </tr>
-                            
-                            
-                            
-                            
-                            
-                            
-                           
-                            
-                            
-                                
-                            
+
                                 
                         </tbody>
                     </table>
@@ -152,6 +142,7 @@ const TwoProductTable =(props) =>{
                                     >
                                         
                                         <option value="d2">Familiares</option>
+                                        <option value="d1">deportivo</option>
                                     </select>
                                 </td>
                             </tr>
@@ -200,7 +191,7 @@ const TwoProductTable =(props) =>{
                                 <tr>
                                     <td>
                                         <button
-                                            onClick={(category)=>addProduct('d2')}
+                                            onClick={addProduct}
                                         >
                                             Agregar Carro
                                         </button>
