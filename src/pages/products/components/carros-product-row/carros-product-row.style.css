@@ -1,0 +1,10 @@
+.carros-product-row-container{
+    border: 1px solid cadetblue;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+.product-without-stock{
+    color:red;
+    font-weight: bold;
+}
